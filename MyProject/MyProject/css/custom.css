@@ -1,0 +1,100 @@
+/* bootstrap overrides*/
+.navbar-default {
+    background: url(../img/t3.png);
+    border-color: #e7e7e7;
+    border-radius: 0px;
+    color: white;
+    font-family: calibri;
+}
+.form-control {
+    border: 1px solid #8f009a;
+    border-radius: 0px;
+}
+
+
+
+body{
+    background-image: url(../img/06.svg);
+    }
+
+p{
+    font-family: fantasy;
+}
+
+.row
+{
+    padding: 10px;
+}
+.row:before{
+    filter: blur(10px);
+
+}
+
+
+.drop-sh
+{
+    filter: drop-shadow(1px 5px 2px #FFF);
+}
+
+.carousel-inner {
+    
+    text-align: center;
+    
+}
+.carimage{
+    filter: drop-shadow(1px 5px 2px #FFF);
+    margin: auto auto;
+    vertical-align: middle;
+
+
+}
+.col-lg-5{
+    padding: 13px;
+    border: 1px solid white;
+   
+    border-radius: 3px;
+}
+.white-text {
+    color:#4E0B0B;
+}
+.col-lg-3 {
+    padding: 13px;
+    /* border: 2px solid #0f2451; */
+    border-radius: 3px;
+    margin-left: 14px;
+    width: 34%;
+    background-color: rgba(255, 255, 255, 0.83);
+    box-shadow: 1px 5px 21px #0f2652;
+}
+.col-lg-4{
+    padding: 1px;
+}
+.col-lg-7 {
+    padding: 300px 72px;
+}
+.user{
+    margin:3px;
+}
+.fa-twitter {
+    color: white;
+}
+._cbc-t{
+    background-color: #00a4e4;
+    color: white;
+}
+._cbc-g
+{
+    background-color: #ff4c4c;color: white;
+}
+._cbc-f{
+    background-color: #4264AA;color: white;
+}
+span.part2 {
+    font-size: 44px;
+    color: #497298;
+}
+span.part1 {
+    font-size: 28px;
+
+    color: #344051;
+}

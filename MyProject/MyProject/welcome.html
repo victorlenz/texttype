@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Welcome </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script>
+        function fill() {
+            var height = window.outerHeight;
+            console.log (height-100 + "px");
+            document.getElementById("notification-pane").style.height =  height-100 + "px";
+            console.log(height);
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <img class="drop-sh"alt="Brand" src="img/logow.png" style="margin: 5px 0px;">
+            <h3 class="navbar-right">Show Off
+            </h3>
+
+            <!--sign in form-->
+
+
+        </div>
+        <div class="navbar-form navbar-right">
+            <div class="forgm-group">
+                <div class="btn nav-btn" onclick="navigate('home.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>My Feeds
+                </div>
+                <div class="btn nav-btn" onclick="navigate('upcoming.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Upcomings
+                </div>
+                <div class="btn nav-btn" onclick="navigate('participations.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Participate
+                </div>
+                <div class="btn nav-btn" onclick="navigate('createcontest.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Create Contest
+                </div>
+
+                <div class="dropdown" style="display:inline-block;">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container-fluid content">
+   <img src="">
+</div>
+
+</body>
+</html>

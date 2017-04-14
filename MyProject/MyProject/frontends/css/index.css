@@ -1,0 +1,49 @@
+body{
+    background-color:#7132a1;
+}
+p{
+    margin: 0px;
+}
+.content {
+    padding: 20px;
+}
+.side1 {
+    width: 60%;
+    float: left;
+    padding: 40px;
+    margin: 0px 40px;
+
+}
+.image-container {
+
+    position: relative;
+    bottom: -145px;
+}
+img {
+    width: 74%;
+}
+span.part2 {
+    font-size: 44px;
+    color: #deebf7;
+}
+span.part1 {
+    font-size: 28px;
+
+    color: #344051;
+}
+input#login:hover {
+    background: #ed7e32;
+    color: white;
+}
+input#login {
+    font-size: 14px;
+    border: none;
+    background: none;
+    -webkit-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -ms-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    transition: background 0.3s linear;
+    padding: 9px;
+    margin: 24px 177px;
+}

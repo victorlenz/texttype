@@ -1,0 +1,12 @@
+div#notification-pane {
+    background-color: rgba(255,255,255,.5);
+    padding: 10px 17px;
+    position: fixed;
+}
+body{
+    background: url(../img/t3.png);
+}
+.content{
+
+    margin-top: 75px;
+}

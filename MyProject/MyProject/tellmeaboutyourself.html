@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <meta name="description" content="description">
+
+    <title>Page Title</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="functions/image-crop/cropimg.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script src="functions/image-crop/cropimg.jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--[if IE]>
+
+    <![endif]-->
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+
+            <img class="drop-sh"alt="Brand" src="img/logo.svg" style="margin: 5px 0px;">
+            <h3 class="navbar-right">
+                Show Off
+            </h3>
+
+
+            <!--sign in form-->
+
+
+        </div>
+        <form class="navbar-form navbar-right hidden-xs" role="search">
+            <div class="forgm-group">
+                <button type="button" class="btn btn-success navbar-btn">Sign in</button>
+            </div>
+
+        </form>
+
+    </div>
+</nav>
+<div class="main-content" style="width: 50%; margin: 0px auto;">
+    <div class="page-header legend">
+        <h3>Take a moment to tell us about Yourself</h3>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+    </div>
+    <form class="form-horizontal" enctype="multipart/form-data" action='functions/controller/imageupload.php' method="POST" id="form">
+        <fieldset>
+            <div class="control-group">
+                <!-- Username -->
+                <label class="control-label"  for="username">Topics you are Intrested in
+                </label> <span class="label label-suggestion">!</span>
+
+                <div class="controls">
+                    <input type="text" id="username" name="username" placeholder="Choose atleast one topic" class="input-xlarge">
+                    
+
+                   <!-- <p class="help-block"> can contain any letters or numbers, without spaces</p>-->
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- E-mail -->
+                <label class="control-label" for="email">E-Topics you want to participate in</label>
+                <span class="label label-suggestion">!</span>
+                <div class="controls">
+                    <input type="text" id="email" name="email" placeholder="choose atleast one topic" class="input-xlarge">
+                    <!--<p class="help-block">Please provide your E-mail</p>-->
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="password">Your Identity proof (governmental is preferred)</label>
+                <span class="label label-suggestion">?</span>
+                <div style="position:relative;" class="border">
+
+                    <a class='btn btn-primary' href='javascript:;'>
+                        Choose File...
+                        <input type="file" class="input-file" name="profilepic" onchange='$("#upload-file-info").html($(this).val());'>
+                    </a>
+                    &nbsp;
+                    <span class='label label-info' id="upload-file-info"></span>
+                    <p id="target">fds</p>
+                </div>
+            </div>
+
+
+            <div class="control-group">
+            <label class="control-label" for="password">Your Profile Picture</label>
+            <div style="position:relative;" class="border">
+
+                <a class='btn btn-primary' href='javascript:;'>
+                    Choose File...
+                    <input type="file" class="input-file" name="fileToUpload"  id="profile-pic">
+
+                </a>
+                <span class='label label-info' id="profilepic-address"></span>
+                &nbsp;
+                <span class='label label-info'></span>
+                <div class="input-group">
+
+
+
+                </div>
+            </div>
+                <input type="submit" id="cropbutton" name="submit" value="Adjust image" class="btn btn-danger" >
+                <img src="" id="profile-image-container" >
+            </div>
+            <div class="progress hidden">
+                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%" id="image-upload-progress">
+                    0%
+                </div>
+            </div>
+
+            <div class="control-group">
+                <!-- Button -->
+                <div class="controls">
+                    <button class="btn btn-success">I have read community standards and I acknowledge it ></button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script>
+    $(document).ready(function() {
+        $('img.my-image').cropimg({
+            maxContainerWidth:             200,
+            resultWidth:                   300,
+            resultHeight:                  200,
+            inputPrefix:                   'ci-',
+            zoomDelay:                     400,
+            mouseWheelZoomTimes:           10,
+            zoomStep:                      1,
+            displayZoomingButtons:         true,
+            displayFixingPositionsButtons: true,
+            displayFixingSizeButtons:      true,
+            showBtnTips:                   true,
+            btnTipsFadeTime:               100,
+            textBtnTipZoomIn:              'Zoom in',
+            textBtnTipZoomOut:             'Zoom out',
+            textBtnTipRTW:                 'Resize to container width',
+            textBtnTipRTH:                 'Resize to container height',
+            textBtnTipFPTL:                'Move image to Top Left Corner',
+            textBtnTipFPTC:                'Move image to Top Center',
+            textBtnTipFPTR:                'Move image to Top Right Corner',
+            textBtnTipFPCL:                'Move image to Center Left',
+            textBtnTipFPCC:                'Move image to Center of container',
+            textBtnTipFPCR:                'Move image to Center Right',
+            textBtnTipFPBL:                'Move image to Bottom Left Corner',
+            textBtnTipFPBC:                'Move image to Bottom Center',
+            textBtnTipFPBR:                'Move image to Bottom Right Corner',
+            onInit: function() {
+                alert('cropimg init!');
+            },
+            onChange: function(w, h, x, y, image) {
+                alert('cropimg changed: w: '+w+', h: '+h+', x: '+x+', y: '+y);
+
+                // Image jQuery object was changed
+                console.log(image);
+            }
+        });
+
+        $("#profile-pic").change(function () {
+           $("#profilepic-address").html($(this).val());
+           
+        });
+
+
+        $("#cropbutton").click(function () {
+
+            var profilePicUrl= $("#profilepic").val();
+            console.log("url is"+profilePicUrl);
+            $("#profile-image-container").attr("src",profilePicUrl);
+            $("#profile-image-container").cropimg({
+                resultWidth:        300,
+                resultHeight:       200
+            });
+        });
+    });
+
+
+</script>
+
+
+</body>
+</html>

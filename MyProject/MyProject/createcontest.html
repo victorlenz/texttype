@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Welcome </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/overrides.css">
+    <link rel="stylesheet" href="css/createcontest.css">
+    <title>Show Off</title>
+    <script>
+        function fill() {
+            var height = window.outerHeight;
+            console.log (height-100 + "px");
+            document.getElementById("notification-pane").style.height =  height-100 + "px";
+            console.log(height);
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <img class="drop-sh"alt="Brand" src="img/logow.png" style="margin: 5px 0px;">
+            <h3 class="navbar-right">Show Off
+            </h3>
+            </image>
+
+            <!--sign in form-->
+
+
+        </div>
+        <div class="navbar-form navbar-right">
+            <div class="forgm-group">
+                <div class="btn nav-btn" onclick="navigate('home.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>My Feeds
+                </div>
+                <div class="btn nav-btn" onclick="navigate('upcoming.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Upcomings
+                </div>
+                <div class="btn nav-btn" onclick="navigate('participations.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Participate
+                </div>
+                <div class="btn nav-btn" onclick="navigate('createcontest.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Create Contest
+                </div>
+
+
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-lg-3" id="notification-pane">
+            <script>fill()</script>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+        </div>
+        <div class="col-lg-9 main-area col-lg-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Complete this form to create contest</h3>
+                </div>
+
+                <div class="panel-body">
+                    <form class="form-horizontal row-border" action="#">
+
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Title</label>
+                            <div class="col-md-10">
+                                <input type="text" name="regular" class="form-control" placeholder="Title max(30 char)" maxlength="30">
+                                <p class="text-info">Title of your contest, generally a name</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Type</label>
+                            <div class="col-md-10">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios" id="text" value="Text" checked="">Text
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios" id="audio" value="Audio" checked="">Audio
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios" id="Video" value="Video" checked="">Video
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optionsRadios" id="photo" value="Photo" checked="">Photo
+                                </label>
+
+                                <p class="text-info">Select the type of post is it.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Description</label>
+                            <div class="col-md-10">
+                                <textarea name="desc" class="form-control" placeholder="Describe about this contest"  rows="8"></textarea>
+                                <p class="text-info">A long description about this contest, make sure you write everything</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Eligibilty</label>
+                            <div class="col-md-10">
+                                <input type="text" name="regular" class="form-control" placeholder="add some criteria,if more than one, separate them by comma" maxlength="30">
+                                <p class="text-info">Who can participate, this will not limit your audience. Everyone can still participate</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Approval</label>
+                            <div class="col-md-10">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optApprove" value="0" checked="checked">No
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optApprove"  value="1" >Yes
+                                </label>
+                                <p class="text-info">if you select yes, you have to review each participant</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <p class="text-danger">You can't make changes once you have submitted the form</p>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="reset" class="btn btn-info">Cancel</button>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

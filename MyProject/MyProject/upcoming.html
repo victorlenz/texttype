@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title> Welcome </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/overrides.css">
+    <link rel="stylesheet" href="css/upcoming.css">
+    <title>Show Off</title>
+    <script>
+        function fill() {
+            var height = window.outerHeight;
+            console.log (height-100 + "px");
+            document.getElementById("notification-pane").style.height =  height-100 + "px";
+            console.log(height);
+        }
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <img class="drop-sh" alt="Brand" src="img/logow.png" style="margin: 5px 0px;">
+            <h3 class="navbar-right">Show Off
+            </h3>
+            </image>
+
+            <!--sign in form-->
+
+
+        </div>
+        <div class="navbar-form navbar-right">
+            <div class="forgm-group">
+                <div class="btn nav-btn" onclick="navigate('home.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>My Feeds
+                </div>
+                <div class="btn nav-btn" onclick="navigate('upcoming.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Upcomings
+                </div>
+                <div class="btn nav-btn" onclick="navigate('participations.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Participate
+                </div>
+                <div class="btn nav-btn" onclick="navigate('createcontest.html')">
+                    <span class="glyphicon glyphicon-envelope nav-glyph" aria-hidden="true"></span>Create Contest
+                </div>
+
+
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container-fluid content">
+    <div class="row">
+        <div class="col-lg-3" id="notification-pane">
+            <script>fill()</script>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> Better check yourself, you're not looking too good.
+            </div>
+        </div>
+        <div class="col-lg-9 main-area col-lg-offset-3">
+            <div class="write-post box-shadow" >
+                <div class="panel">
+                    <div class="">
+                        <span class=""></span>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                              </span>
+                        </div><!-- /input-group -->
+
+                            <div class="no-btn-cont">
+                                <button type="button" class="no-btn">Text</button>|
+                                <button type="button" class="no-btn">Audio</button>|
+                                <button type="button" class="no-btn">Video</button>|
+                                <button type="button" class="no-btn">Photo</button>|
+                                <button type="button" class="no-btn">Least Participant</button>|
+                                <button type="button" class="no-btn">Least Attendees</button>|
+                                <button type="button" class="no-btn">Highest Participant</button>|
+                                <button type="button" class="no-btn">Highest Attendees</button>|
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="feeds">
+                <!--feed1-->
+
+                <!--feed2-->
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/4.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Singing Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-oct-2017</span></p>
+                                <p class="contest-detail"> Sing a Song</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                    <button type="button" class="btn btn-success">DETAILS</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/6.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Play Piano Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-Aug-2017</span></p>
+                                <p class="contest-detail">  Music Contest create a beautiful note</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                    <button type="button" class="btn btn-success">DETAILS</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  454 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/profile.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Write a poem | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-sept-2017</span></p>
+                                <p class="contest-detail"> Write a devotinal poem</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                    <button type="button" class="btn btn-success">DETAILS</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/vivek_thumbnail.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Play Piano Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-oct-2017</span></p>
+                                <p class="contest-detail">  Music Contest create a beautiful note</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                    <button type="button" class="btn btn-success">DETAILS</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/vivek_thumbnail.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Play Piano Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-oct-2017</span></p>
+                                <p class="contest-detail">  Music Contest create a beautiful note</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                    <button type="button" class="btn btn-success">DETAILS</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/vivek_thumbnail.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Play Piano Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-oct-2017</span></p>
+                                <p class="contest-detail">  Music Contest create a beautiful note</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="panel panel-default box-shadow">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object post-dp" src="img/vivek_thumbnail.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+
+                                <p class="contest-head"><span class="contest-name"> Play Piano Contest | </span> <span class="contest-type"> Audio |</span> <span class="contest-startingon"> Starting On :12-oct-2017</span></p>
+                                <p class="contest-detail">  Music Contest create a beautiful note</p>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-success">PARTICIPATE</button>
+                                    <button type="button" class="btn btn-success">ATTEND</button>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="..." style="float: right">
+                                    <div class="btn btn-group-sm"><span class="label label-default"> 1234 <span class="contest-stat">PARTICIPATING</span> |  4554 <span class="contest-stat">ATTENDING</span></span></div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

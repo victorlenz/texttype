@@ -1,0 +1,56 @@
+.panel-default>.panel-heading {
+    background-color: #eee;
+    border-color: rgb(221, 221, 221);
+    color: black;
+}
+
+.content{
+    margin-top: 75px;
+}
+div#notification-pane {
+    background-color: rgba(255,255,255,.5);
+    padding: 10px 17px;
+    position: fixed;
+}
+img.media-object.post-dp {
+    height: 60px;
+}
+p.contest-head {
+    font-size: small;
+    font-weight: 800;
+}
+p.contest-detail {
+    margin-bottom: 15px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #009688;
+    border-color: #f5f5f5;
+}
+img.media-object.post-dp {
+    height: 90px;
+}
+span.contest-stat {
+    font-size: smaller;
+}
+button.no-btn {
+    background: rgba(255, 255, 255, 0);
+    border: 0;
+}
+.no-btn-cont {
+    font-size: smaller;
+    padding: 7px;
+    color: gray;
+}
+button.no-btn {
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    -o-transition: background-color .2s;
+    transition: background-color .2s;;
+}
+button.no-btn:hover {
+    background-color: #0d2d6d;
+    color: white;
+    border-radius: 4px;
+}
